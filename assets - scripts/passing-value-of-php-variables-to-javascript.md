@@ -9,7 +9,7 @@ function wpcookbook_include_js_and_css() {
 	global $wp_version;
 	$data = array( "version" => $wp_version, "admin_ajaxurl" => admin_url( "admin-ajax.php" ) );
 	wp_enqueue_script( "wpcbjs", get_template_directory_uri() . "/scripts/main.js", "jquery", "1.0", true );
-	wp_localize_script( "wpcbjs", "simblog", $data );
+	wp_localize_script( "wpcbjs", "jsvars", $data );
 }
 ```
 
