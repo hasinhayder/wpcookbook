@@ -3,8 +3,6 @@
 This ay sound little weird, but the application is huge. I mean come on, there are many times you wanted to get the values of some PHP variables inside your JavaScript files. You don't need ajax or any complex mime-format directives for your web server to do it for you. WordPress gives an easy way to get this job done, all you have to do is use the `wp_localize_script` function. 
 
 ```php
-<?php
-
 add_action( "wp_enqueue_scripts", "wpcookbook_include_js_and_css" );
 
 function wpcookbook_include_js_and_css() {
